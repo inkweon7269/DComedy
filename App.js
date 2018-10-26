@@ -36,6 +36,7 @@ export default class App extends Component {
 
     state = data.filter(item => item.id === current)[0];
 
+    // componentDidMount와 setState 관계
     // https://jsdev.kr/t/componentdidmount-setstate/4023
     /*
     componentDidMount() {
