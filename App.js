@@ -32,11 +32,11 @@ const yyyymmdd = () => {
 };
 const current = yyyymmdd();
 
-
 export default class App extends Component {
 
     state = data.filter(item => item.id === current)[0];
 
+    // https://jsdev.kr/t/componentdidmount-setstate/4023
     /*
     componentDidMount() {
         data.filter(item => item.id === current).map(value => {
